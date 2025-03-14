@@ -1,0 +1,44 @@
+_repo: Pieter-Bruegel-the-Elder-b-A-study-of-his-paintings_75540
+_version: 0.0.1
+contributor:
+  artist:
+    agent_name: Bruegel, Pieter
+    aliases:
+    - Bruegel, Pierre
+    - Bruegel, Pieter, the Elder
+    - Brueghel, Pieter
+    deathdate: 1569
+    gutenberg_agent_id: '58044'
+    url: http://www.gutenberg.org/2009/agents/58044
+    wikipedia: https://en.wikipedia.org/wiki/Pieter_Bruegel_the_Elder
+creator:
+  author:
+    agent_name: Barker, Virgil
+    birthdate: 1890
+    deathdate: 1965
+    gutenberg_agent_id: '58039'
+    url: http://www.gutenberg.org/2009/agents/58039
+description: ''
+gutenberg_issued: '2025-03-06'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '75540'
+  lccn: '26022972'
+language: en
+pgterms:marc904: https://archive.org/details/pieterbruegeleld00bark
+pgterms:marc905: 20240812072454barker
+pgterms:marc906: '1926'
+pgterms:marc907: US
+production_note: deaurider, Robert Tonsing, and the Online Distributed Proofreading
+  Team at https://www.pgdp.net (This file was produced from images generously made
+  available by The Internet Archive)
+publication_note: '  $aNew York :$bThe Arts Publishing Corporation, $c1926.'
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Bruegel, Pieter, approximately 1525-1569'
+- !lcc 'ND'
+- GITenberg
+title: 'Pieter Bruegel the Elder : $b A study of his paintings'
+url: http://www.gutenberg.org/ebooks/75540
