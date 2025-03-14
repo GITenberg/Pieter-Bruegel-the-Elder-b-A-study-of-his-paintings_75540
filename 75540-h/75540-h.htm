@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Pieter bruegel the elder: a study of his paintings | Project Gutenberg
+  </title>
+  <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+  <style>
+
+    body {
+      margin-left: 8%;
+      margin-right: 10%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+      clear: both;
+    }
+
+    h1 {font-size: 300%;}
+
+    h2.nobreak {page-break-before: avoid;}
+
+    p {
+      margin-top: .5em;
+      margin-bottom: .5em;
+      text-align: justify;
+      text-indent: 1em;
+    }
+
+    .p2 {margin-top: 2em;}
+
+    /* === Continuation after illo or poetry === */
+    p.noindent {text-indent: 0;}
+
+    .hang {
+      text-align: justify;
+      margin-top: 1.2em;
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+
+    /* === Title page === */
+    div.titlepage {
+      text-align: center;
+      font-weight: bold;
+      page-break-before: always;
+    }
+
+    div.titlepage p {
+      text-align: center;
+      text-indent: 0;
+      font-weight: bold;
+      line-height: 1.5;
+      margin-top: 3em;
+    }
+
+    div.chapter {
+      clear: both;
+      margin-top: 10%;
+      page-break-before: always;
+    }
+
+    hr.chap  {width: 65%; margin: 5% 17.5%;}
+    .x-ebookmaker hr.chap {visibility: hidden;}
+    @media print {hr.chap {visibility: hidden;}}
+
+    /* === Superscript size === */
+    sup {font-size: 75%;}
+
+    /* === Fonts === */
+    .xsmall   {font-size: x-small;}
+    .small    {font-size: small;}
+    .large    {font-size: large;}
+    .xlarge   {font-size: x-large;}
+    .xxlarge  {font-size: xx-large;}
+    .smcap    {font-variant: small-caps;}
+    cite.smcap  {font-variant: small-caps; font-style: normal;}
+    .bold     {font-weight: bold;}
+
+    /* === Alignment === */
+    .mt2    {margin-top: 2%;}
+    .mt10   {margin-top: 10%;}
+    .mt20   {margin-top: 20%;}
+    .mb2    {margin-bottom: 2%;}
+    .mb10   {margin-bottom: 10%;}
+    .lh2    {line-height: 2em;}
+    .clear  {clear: both;}
+    .center {text-align: center;}
+    .right  {text-align: right; margin-right: 2%;}
+    .fright, .x-ebookmaker .fright {float: right;}
+
+    /* === Page #s === */
+    .pagenum {
+      position: absolute;
+      right: 1%;
+      color: gray;
+      font-size: x-small;
+      text-align: right;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      padding: 0 0.2em;
+    }
+
+    /* === Bordered box === */
+    .bbox {
+      margin: 5% auto;
+      border: 2px solid;
+      padding: .5em 2em;
+    }
+
+    /* === Footnotes === */
+    .footnote {
+      margin: 1% 5% 1% 5.5%;
+      font-size: small;
+      text-align: justify;
+    }
+
+    .footnote .label {
+      position: absolute;
+      right: 88%;
+      text-align: right;
+    }
+
+    .fnanchor {
+      vertical-align: super;
+      font-size: x-small;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+    }
+
+    /* === Poetry === */
+    .center-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .poetry {
+      text-align: left;
+      margin-left: 5%;
+      margin-right: 5%;
+      }
+
+    .stanza {
+      margin: 0.5em auto;
+      text-indent: -3em;
+    }
+    .stanza div.i0  {padding-left: 3em;}
+    .stanza div.i1  {padding-left: 3.4em;}
+
+    /* === Images === */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+
+    figure {
+      max-width: 100%;
+      page-break-inside: avoid;
+      clear: both;
+    }
+
+    figcaption {
+      font-weight: bold;
+      font-size: small;
+      text-align: center;
+    }
+
+    .figcenter {
+      margin: 3% auto 2% auto;
+      max-width: 100%;
+    }
+
+    .figleft, .x-ebookmaker .figleft {
+      float: left;
+      margin: 0.5em 1em 0.5em 0;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .figright, .x-ebookmaker .figright {
+      float: right;
+      margin: 0.5em 0 0.5em 1em;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .attl, .x-ebookmaker .attl {
+      float: left;
+      font-size: x-small;
+      margin-bottom: 0.5%;
+    }
+
+    .illowp60 {width: 60%; max-width: 45em;}
+    .illowp66 {width: 66%; max-width: 49.5em;}
+    .illowp75 {width: 75%; max-width: 56.25em;}
+    .illowp80 {width: 80%; max-width: 60em;}
+    .illowp90 {width: 90%; max-width: 67.5em;}
+    .illowp100 {width: 100%; max-width: 75em;}
+
+    /* === Text drop caps === */
+    /*p.drop-cap {text-indent: -0.3em;}*/
+    p.drop-cap {text-indent: 0;}
+    p.drop-cap:first-letter {
+      float: left;
+      font-size: 380%;
+      /*margin: 0em 0.1em 0em 0.1em;*/
+      margin: 0 0.2em 0 0;
+      line-height: 0.85em;
+      font-style: normal;
+    }
+    p.drop-cap .smcap1 {
+      font-variant: small-caps;
+      margin-left: -0.6em;
+    }
+    p.drop-cap .smcap2 {
+      font-variant: small-caps;
+      margin-left: -1.2em;
+    }
+
+    p.drop-cap-s {text-indent: 0;}
+    p.drop-cap-s:first-letter {
+      float: left;
+      margin: 0em 0.1em 0em 0em;
+      font-size: 250%;
+      line-height:0.85em;
+    }
+
+    /* === Abreviation: no underline, no color === */
+    abbr {
+      border: none;
+      text-decoration: none;
+    }
+
+    /* no underline */
+    a {text-decoration: none;}
+
+    /* === Transcriber's notes === */
+    ul.spaced li {padding-top: 1%;}
+
+    .transnote {
+      background-color: #E6E6FA;
+      border: 1px solid;
+      color: black;
+      font-size: small;
+      padding: 0.5em;
+      margin-bottom: 5em;
+      font-family: sans-serif, serif;
+    }
+
+  </style>
+</head>
+
+<body>
+<div style='text-align:center'>*** START OF THE PROJECT GUTENBERG EBOOK 75540 ***</div>
+  <figure class="figcenter illowp66 x-ebookmaker-drop">
+    <img src="images/cover.jpg" alt="">
+  </figure>
+
+  <hr class="chap">
+  <div class="center xxlarge" style="margin-top: 5em; margin-bottom: 5em;">PIETER BRUEGEL THE ELDER:<br>
+    <span class="xlarge">A STUDY OF HIS PAINTINGS</span></div>
+  <hr class="chap">
+
+  <figure class="figcenter illowp75" id="i_02">
+    <img src="images/i_02.jpg" alt="">
+    <figcaption>HUNTERS IN THE SNOW (DETAIL)</figcaption>
+  </figure>
+
+  <hr class="chap">
+  <div class="titlepage">
+    <h1>PIETER BRUEGEL<br>THE ELDER</h1>
+
+    <div class="xxlarge">A STUDY OF HIS PAINTINGS</div>
+
+    <div class="large mt2 lh2">BY<br>VIRGIL BARKER</div>
+
+    <div class="mt20 lh2">NEW YORK<br>
+    <span class="large">THE ARTS PUBLISHING CORPORATION</span><br>
+    1926</div>
+  </div>
+
+  <hr class="chap">
+  <div class="center bold small mt10">COPYRIGHT, 1926<br>
+    BY THE ARTS PUBLISHING CORPORATION</div>
+  <div class="center xsmall bold mt20 mb10">PRINTED IN THE UNITED STATES OF AMERICA</div>
+
+  <hr class="chap">
+  <div class="center smcap xlarge bold mt10">Note</div>
+
+  <p class="drop-cap"><span class="smcap1">Most</span> of the material included in this book was originally published
+    in a special Bruegel edition of <cite class="smcap">The Arts</cite>. Mr. Barker’s essay
+    met with such immediate success that in order to meet the demand the
+    editor decided to increase the number of illustrations and publish Mr.
+    Barker’s noteworthy essay in permanent form.</p>
+
+  <p>Comparatively little has been written in English on Pieter Bruegel
+    the Elder, nothing in fact except a few passing magazine articles. At
+    the request of the artists <cite class="smcap">The Arts</cite> undertook to supply this
+    want. In selecting Mr. Barker to carry out this important work <span class="smcap">The
+    Arts</span> was particularly fortunate. Besides being an ardent student
+    of the genius of Bruegel, the author, in the course of his duties as
+    European correspondent of <cite class="smcap">The Arts</cite>, was able to carry on the
+    special research necessary to give permanent value to the following
+    essay.</p>
+
+  <div class="right smcap mb10">Forbes Watson.</div>
+
+  <hr class="chap">
+  <figure class="figcenter illowp75" id="i_06">
+    <img src="images/i_06.jpg" alt="">
+    <figcaption>THE CONVERSION OF SAINT PAUL (DETAIL)</figcaption>
+  </figure>
+
+  <hr class="chap x-ebookmaker-drop">
+  <div class="chapter">
+    <span class="pagenum" id="Page_7">7</span>
+    <h2 class="nobreak" id="STUDY">PIETER BRUEGEL THE ELDER<br>
+      <span class="large">A STUDY OF HIS PAINTINGS</span></h2>
+  </div>
+
+  <p class="drop-cap"><span class="smcap2">Aside</span> from the evidence of the signed and frequently dated prints,
+    drawings and paintings, few things are certainly known about the life
+    and personality of Pieter Bruegel the Elder. Almost all of these,
+    such as they are, occur in a brief passage concerning him, written
+    about thirty years after his death, in “The Book of the Painters” by
+    Carel Van Mander. Herein is no mention of the date of Bruegel’s birth;
+    even the place of it, despite a seeming definiteness, remains in some
+    obscurity. His biographer says that the painter was born “not far from
+    Breda, in a village called Breughel,<a id="FNanchor_1" href="#Footnote_1" class="fnanchor">[1]</a> by which name he called himself
+    and left it to his descendants.” The village of that name nearest to
+    Breda is twenty-five miles away; and as distances went in the sixteenth
+    century, this seems hardly to be bridged by Van Mander’s easy phrase.
+    As for the year, the guesses of the scholars range all the way from
+    1510 to 1530, the most widely accepted one being 1525. Any closer
+    determination of it is a matter of comparative unimportance in its
+    possible effect on the period of actual productiveness, since this is
+    very satisfactorily covered by trustworthy dates.</p>
+
+  <div class="footnote"><a id="Footnote_1" href="#FNanchor_1" class="label">[1]</a> There are several different ways of spelling this name,
+    each having some degree of authority; but so far as concerns the
+    painter himself, the deciding fact is that the signatures now visible
+    on the paintings (about twenty in number) consistently adhere to
+    BRVEGEL.</div>
+
+  <p>And whatever the exact year may have been, it had not been long before
+    when for Europeans the geographical world had been suddenly enlarged
+    as a sort of materialization of the immediately preceding enlargement
+    of mind. The succession of discoveries—of America; of India and the
+    true Indies; of Sumatra, Java and Borneo; and, two hundred and fifty
+    years after Marco Polo, of China—were only the working on another
+    plane of the essentially exploring spirit which had been previously
+    manifested by the scholars, scientists and artists of the Early
+    Renaissance. National unity on a fresh basis had been realized in Spain
+    through the expulsion of the Moors, and in both France and England
+    under absolute monarchies which were headed, at the time of Bruegel’s
+    birth, by Francis <abbr title="first">I</abbr> and Henry <abbr title="eighth">VIII</abbr>. About that time, also, Magellan
+    was circumnavigating the globe and Cortez was conquering Mexico;
+    Leonardo and Raphael were dying, and shortly after them went Carpaccio,
+    Leo <abbr title="tenth">X</abbr> and Signorelli. Martin Luther, preaching the Reformation in
+    Germany, was thus initiating a movement of ruinous significance for
+    Bruegel’s homeland; for there the cause of religious liberty, gradually
+    coalescing with that of political independence, was to meet with the
+    terrible repressions begun by the newly elected Emperor, Charles Quint,
+    who was already by inheritance lord of the Low Countries.</p>
+
+  <p>During all this period of ferment and reorientation for the European
+    mind, Antwerp, where Bruegel was to spend most of his life, was one of
+    the most important of all ports. Situated in what was then the most
+    densely populated region of Europe, it had in its own houses a hundred
+    thousand persons; and of these more than a tenth were foreigners—German
+    merchants, Italian scholars, Portuguese Jews, French Huguenots, English
+    sailors and the soldiers of Spain. Far-journeyed vessels brought to
+    it the spices and rich stuffs, the metal-work and strange animals
+    of distant lands; and their seamen had tales to tell of things far
+    off towards the expanding horizons of the world. In this comfortable
+    and prosperous city, where the sharp demarcations between classes
+    prevalent in other countries were blurred almost into a real democracy
+    of the bourgeois, every fresh discovery and important event had its
+    repercussion in the general consciousness.</p>
+
+  <p>Antwerp was thus a natural center of activity for the religious
+    propaganda and disputation which formed so large and so tragic an
+    <span class="pagenum" id="Page_8">8</span>element in the life of the sixteenth century; creeds of all sorts
+    readily found adherents among its varied and impressionable populace.
+    Lutheranism was so strongly advocated by the convent of Augustinian
+    monks that its inmates were dispersed, after the execution of two
+    among them, and its buildings razed. Though the terrorism of the
+    Inquisitor Van der Hulst and his priestly successors imposed silence
+    on many, there were open preachings as well as clandestine meetings,
+    and riots in which religion-frenzied women were among the boldest; and
+    with all the burnings of the books, with all the imprisonments and
+    the brandings, the full penalties of the imperial edicts could hardly
+    be enforced by those who were conscious that such enforcement would
+    destroy the principal source of the Emperor’s precarious revenue.
+    Even the anarchy of Anabaptism, persecuted by Catholic and Protestant
+    alike, made headway through the martyrdom of its believers; and from
+    1544, almost the very year when the young Pieter Bruegel commenced his
+    apprenticeship, the new sectarianism of Calvin entered the city and
+    grew rapidly in strength.</p>
+
+  <figure class="figcenter illowp90" id="i_08">
+    <img src="images/i_08.jpg" alt="">
+    <figcaption>BIG FISH EAT LITTLE ONES (DRAWING). &nbsp; &nbsp;1556. &nbsp; &nbsp;VIENNA, ALBERTINA</figcaption>
+  </figure>
+
+  <p>While he was growing up, the English and the French were subduing
+    the North American continent and in the Andes Pizarro was rifling
+    the wealth of Peru; Rome was being pillaged by the Germans; Henry
+    <abbr title="eighth">VIII</abbr> was finally repudiating Catholicism and Ignatius of Loyola was
+    in a way belatedly replying to Luther by organizing the Society of
+    Jesuits; Hampton Court Palace, the French chateaux and the palaces of
+    Venice were being built; Erasmus, Dürer, Machiavelli, Luini, Ariosto,
+    Correggio died. As yet unconscious <span class="pagenum" id="Page_9">9</span>of such events and such personages,
+    perhaps ignorant of the nearer deaths of Quentin Matsys and Lucas
+    van Leyden, the youth of nameless family was living a peasant among
+    peasants—and a genius in the making—sharing to full their laborious,
+    roistering life. Hard drinkers and heavy eaters, they were much given
+    to feasts and fairs; marriages, baptisms, even deaths were for them
+    occasions for celebrations as excessive as the labor from which they
+    thus escaped. Their animal frankness and coarse gaiety blew like a
+    gale of rude health over all their activities. From life itself, from
+    the small events in a remote village of the <em>Campine</em>, Bruegel
+    absorbed the great sane grossness which now seems buried in the books
+    of his day. Bringing with him the peasant vitality which was to develop
+    into a lofty philosophic humaneness, he came to Antwerp and, a youth
+    approaching his twentieth year, became an apprentice to the celebrated
+    Pieter Coeck. Paracelsus, Copernicus and Holbein had just died; Bruegel
+    had hardly learned to grind his colors when French Francis and English
+    Henry followed them, even as their sometime enemy, sometime ally,
+    Charles, was bloodily but only temporarily settling religious questions
+    at Mühlberg.</p>
+
+  <figure class="figcenter illowp90" id="i_09">
+    <img src="images/i_09.jpg" alt="">
+    <figcaption>THE LAST JUDGMENT (DRAWING). &nbsp; &nbsp;1558. &nbsp; &nbsp;VIENNA, ALBERTINA</figcaption>
+  </figure>
+
+  <p>From his first master Bruegel must have received somewhat more than a
+    merely technical training, good as that probably was. Coeck had been
+    for four years the pupil of Bernard van Orley and had later studied
+    in Rome; in his own work afterwards he relied to such an extent upon
+    the formulas then worked out that all of it now seems borrowed; but
+    the precepts that he would pass <span class="pagenum" id="Page_10">10</span>on to an apprentice could not dull or
+    conventionalize so forceful a nature as Bruegel’s. Of more significance
+    in the development of such a nature must have been the stories of far
+    countries that were told, adding to his knowledge and stimulating his
+    imagination; for Coeck had spent the year of 1533 in the Constantinople
+    of Suleiman the Magnificent and had been one of the <em>entourage</em>
+    of Charles on his expedition to Tunis in 1538. Painter to the Emperor
+    and Dean of the Guild of Saint Luke, Pieter Coeck died in 1550. Then or
+    before Bruegel passed over to the work-shop of Jerome Cock, who was not
+    so much a painter as a dealer in pictures and a publisher of popular
+    prints. His establishment “was certainly the rendezvous of all the
+    artists and all the amateurs of Antwerp and even from abroad. Rendered
+    in engraving, the greater number of existing masterpieces would pass
+    under the eyes of the attentive Bruegel.” (Bernard: <abbr title="page">p.</abbr> 58.) The very
+    shop-name, “At the Sign of the Four Winds,” symbolized the range of
+    influences that played over him, the sights and tales that passed into
+    his consciousness; and for Bruegel these things could be only so many
+    more incitements to journey into the world and see it all for himself.</p>
+
+  <figure class="figcenter illowp90" id="i_10">
+    <img src="images/i_10.jpg" alt="">
+    <figcaption>A VILLAGE WEDDING. &nbsp; &nbsp;PHILADELPHIA, JOHNSON COLLECTION</figcaption>
+  </figure>
+
+  <figure class="figright illowp60" id="i_11">
+    <img src="images/i_11.jpg" alt="">
+    <figcaption>DANCING PEASANT. &nbsp; &nbsp;THE HAGUE, VAN VALKENBURG COLLECTION</figcaption>
+  </figure>
+
+  <p>Therefore it is not surprising that, after he had completed his
+    apprenticeship and been received into the painter’s guild, in 1551,
+    he should set out upon his travels. Such a trip in those days was no
+    light undertaking. All <span class="pagenum" id="Page_11">11</span>frontiers were insecure since the wars between
+    Charles and Francis for continental domination; for little or nothing
+    soldiers turned into robbers. Van Mander mentions neither routes nor
+    places, writing only that Bruegel “went into France and from there into
+    Italy.” Even the drawings now preserved afford no positive information
+    as to the way he went—a circumstance which might be interpreted to
+    mean that already he was interested less in telling what a specific
+    place looked like than in rendering the emotional effect of nature
+    upon himself. But two designs now preserved as etchings are signed
+    and dated at Rome in 1553, and there is a drawing of the Ripa Grande
+    which appears to have been done on the spot. The print of a naval
+    battle engraved by Huys and published by Cock after Bruegel’s return to
+    Antwerp indicates that he went as far south as Messina.</p>
+
+  <p>When he passed through France, François Clouet and Germain Pilon were
+    practising their art of tepid grace; when he reached Rome, the Sistine
+    Chapel paintings had been completed, but not the church of Saint Peter.
+    At the height of their working powers were Michelangelo, Titian,
+    Palestrina, Palladio; and Benvenuto Cellini was doubling in the roles
+    of artist and bandit. There is no proof that Bruegel had any contact
+    with these men; that he even saw their works is recorded neither in
+    words nor in the paintings by which he lives today in their company.
+    It is certainly reasonable, however, to suppose that the fame of his
+    contemporaries had not only reached him but actually played a part in
+    persuading him to his long wayfaring. Though still in his twenties, he
+    even then had sufficiently a mind of his own to avoid the mistake of
+    his predecessors, who had gone south specifically to copy and imitate
+    the styles of the Italian painters. In their journeying they were
+    following a fashion, doing something because others were doing it;
+    Bruegel’s urge was both deeper and broader, as his genius was.</p>
+
+  <p>Yes, the artistic, the professional, motive must have had much to do
+    with sending him to Italy, but the only way of expressing the sum total
+    of the desires that undoubtedly <span class="pagenum" id="Page_12">12</span>animated him is to say that he must
+    have craved more life.</p>
+
+  <div class="center-container">
+    <div class="poetry">
+      <div class="stanza">
+        <div class="i0">“For to admire an’ for to see,</div>
+        <div class="i1">For to be’old this world so wide”—</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="noindent">no motive less comprehensive than this could have moved him. He was a
+    great artist in the making, but he was even more a man than an artist;
+    for him the art of other men could be only a part, and not the most
+    important part, of the all-inclusive experience of which he was in
+    search. Only such a conception of his personality can account for the
+    failure of the Italian masterpieces to influence him then or thereafter
+    and his own immediate and life-long preoccupation with the entire range
+    of nature and of human life. Moreover, so much can be inferred from Van
+    Mander’s only other reference to this momentous trip, a reference which
+    takes the form of reporting somebody else’s remark that “... in the
+    Alps he swallowed all the rocks and mountains, to return home and vomit
+    them out on painting-board and canvas....”</p>
+
+  <h3>2.</h3>
+
+  <p class="drop-cap-s"><span class="smcap1">Towards</span> the end of 1553, not long after the deaths of Rabelais and
+    Lucas Cranach, Bruegel was back in Antwerp. He again became affiliated
+    with the shop of Jerome Cock, but now as a sort of collaborator, making
+    drawings for many plates to be engraved by others and published by the
+    shop. As a successful business man with an eye to the market, Cock’s
+    specialties were landscapes of all types and grotesqueries in the
+    manner of Jerome Bosch, dead thirty-five years before, whose works were
+    a mine of motives for exploitation. The former apprentice proved to be
+    an even greater source of revenue and popularity for “The Four Winds”;
+    he shared completely in the contemporary taste served by the shop and
+    for several years devoted himself entirely to new and increasingly
+    inventive compositions in each <em>genre</em>.</p>
+
+  <figure class="figcenter illowp75" id="i_12">
+    <img src="images/i_12.jpg" alt="">
+    <figcaption>STUDY FOR A “BATTLE BETWEEN FAT AND LEAN.” &nbsp; &nbsp;1558? &nbsp; &nbsp;COPENHAGEN, ROYAL COLLECTION</figcaption>
+  </figure>
+
+  <p>The pure landscapes of this period fall into two very distinct
+    divisions—the small, intimate ones and the large, composite ones.
+    <span class="pagenum"><a id="Page_13"></a><a id="Page_14"></a><a id="Page_15"></a>15</span>Among the first sort those of such obviously picturesque things as
+    ruins are less interesting, seem less realized, than those depicting
+    the homely commonplaces characteristic of the Low Countries. An
+    indefinite and puddled village street, a church set among trees,
+    the hybrid ruralness where town and country meet—the buildings
+    and small figures rendered in a clean, unwavering line and the
+    massed multitude of leaves given without a superfluous or unmeaning
+    scribble—these things, conveyed with such immediacy by the free and
+    sensitive pen-work, become sharp-edged and lose their bloom through
+    the interposition of the engraver’s hand. Though his return gave him
+    to see all the littlenesses about him with the freshness of a first
+    encounter, it did not make him forget the mountains which had struck
+    so deeply into his mind; and he composed a whole series of large,
+    Latin-titled designs in which the far and low horizons of home were
+    fabulously combined with Alpine steeps. In these plates, deeper than
+    the romanticism of their composite character, is an immense and sober
+    poetry which transpires even through the hardness of the engraving.</p>
+
+  <figure class="figcenter illowp100" id="i_13">
+    <img src="images/i_13.jpg" alt="">
+    <figcaption>BATTLE BETWEEN CARNIVAL AND LENT. &nbsp; &nbsp;1559. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp75" id="i_14">
+    <img src="images/i_14.jpg" alt="">
+    <figcaption>BATTLE BETWEEN CARNIVAL AND LENT (DETAIL)</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_15">
+    <img src="images/i_15.jpg" alt="">
+    <figcaption>THE DESCENT OF CHRIST INTO LIMBO (DRAWING). &nbsp; &nbsp;1561? &nbsp; &nbsp;VIENNA, ALBERTINA</figcaption>
+  </figure>
+
+  <p>One print, dated the very year of his return, a composition of many
+    people skating just outside a city wall, is obviously based on direct
+    observation and is Bruegel’s first essay in the realistic rendering
+    of the life of crowds which was later to play so large a part in his
+    painting; but yet awhile the greater part of his labor went into a long
+    succession of drolleries and diabolisms.</p>
+
+  <figure class="figcenter illowp100" id="i_16">
+    <img src="images/i_16.jpg" alt="">
+    <figcaption>FLEMISH PROVERBS. &nbsp; &nbsp;1559. &nbsp; &nbsp;BERLIN, KAISER FRIEDRICH MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp100" id="i_17">
+    <img src="images/i_17.jpg" alt="">
+    <figcaption>CHILDREN’S GAMES. &nbsp; &nbsp;1560. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>It is in connection with this part, and this part only, of his
+    life-work that there arises any necessity of discussing the influence
+    of another painter on Bruegel. Van Mander <span class="pagenum"><a id="Page_16"></a><a id="Page_17"></a><a id="Page_18"></a>18</span>treats the matter thus:
+    “He practised much in the manner of Jerome Bosch and used to make many
+    such goblin pictures and drolleries, for which he was called by many
+    <em>Pieter the Droll</em>.” The biographer here recorded the general
+    contemporary estimate which, though it is now seen to fall far short
+    of the truth, was surely natural enough, since in his own day Bruegel
+    was popularly known by the widely circulated prints rather than by
+    the unreproduced paintings. The <a href="#i_08"><cite>Big and Little Fish</cite></a> of 1556
+    is directly from Bosch, and that his spirit and his manner did have
+    an influence upon Bruegel is not to be denied. But such influence as
+    Bosch did exert upon the man who had returned from Italy uninfluenced
+    was possible only because they shared in a racial streak which can be
+    traced back of them into the Middle Ages. The quality that allowed
+    Bruegel to be influenced by Bosch at all would have manifested
+    itself in Bruegel’s art even if Bosch had never lived. Moreover,
+    Bosch’s art was limited almost to this one type of subject-matter,
+    whereas Bruegel’s art soon developed other and far more important
+    characteristics which overshadowed without obliterating this element of
+    grotesquerie.</p>
+
+  <figure class="figcenter illowp90" id="i_18">
+    <img src="images/i_18.jpg" alt="">
+    <figcaption>THE FALL OF THE REBEL ANGELS. &nbsp; &nbsp;1562. &nbsp; &nbsp;BRUSSELS, MUSEUM</figcaption>
+  </figure>
+
+  <p>For the time being, however, it had free rein in a series of
+    <cite>Vices</cite> and numerous separate plates such as <cite>The Ass
+    at School</cite>, <cite>The Sorcerer</cite>, <cite>The Merchant Robbed by
+    Monkeys</cite>. In these prints there are, in addition, a mastery of
+    design, an inventiveness of detail and a convincingness of outlandish
+    imagination that far surpass Bosch’s most ambitious efforts. A little
+    of these qualities is to be discerned in the two drawings of <a href="#i_09"><cite>The
+    Last Judgment</cite></a> and <a href="#i_15"><cite>Christ in Limbo</cite></a>; and they also display
+    Bruegel’s entire lack of any mystical <span class="pagenum" id="Page_19">19</span>fervor, which would have
+    imparted some sort of impressiveness to his Christs. This negative
+    trait in Bruegel, which is the exact obverse of the sort of humaneness
+    which made him great, is further shown in the series of <cite>Virtues</cite>,
+    also of this period; although these occasionally exhibit a high degree
+    of skill in handling complex groupings, they are what professionalized
+    virtues are apt to be—tedious.</p>
+
+  <figure class="figcenter illowp90" id="i_19">
+    <img src="images/i_19.jpg" alt="">
+    <figcaption>BATTLE BETWEEN THE ISRAELITES AND THE PHILISTINES. &nbsp; &nbsp;1562 OR 1563. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>Midway in this prosperous and fertile time of development the Emperor
+    Charles, taken with the notion of enjoying all the benefits of being
+    dead while yet alive, partitioned the empire between his brother and
+    his son, and himself retired in state to a monastery in Spain. From
+    this haven, free of governmental responsibilities, he was able, through
+    his dutiful son Philip, to instigate increasingly severe measures of
+    religious and political repression for the people of the northern
+    lowlands. Yet such things did not affect the personal liberty of
+    Bruegel, who was maintaining an irregular establishment described by
+    Van Mander in the following anecdote: “As long as he lived in Antwerp,
+    he kept house with a servant-girl, whom he might have married had it
+    not misfortuned him that she was always telling lies, a thing repugnant
+    to his love of truth. He made an agreement or contract with her that he
+    should mark all her lies on a stick—and he took a pretty long one—and
+    when the stick should be full of marks the marriage should be off;
+    which then happened before much time had passed.”</p>
+
+  <figure class="figleft illowp60" id="i_20">
+    <img src="images/i_20.jpg" alt="">
+    <figcaption>HEAD OF AN OLD PEASANT WOMAN. &nbsp; &nbsp;1564? &nbsp; &nbsp;MUNICH. ALTE PINAKOTHEK</figcaption>
+  </figure>
+
+  <p>More important is what Van Mander tells us of a friendship: “He worked
+    much for a merchant named Hans Frankert, an admirable and excellent
+    man, who found pleasure in knowing Bruegel and was with him whole
+    days at a time. With this man Frankert, Bruegel often went among the
+    peasants, to fairs and marriages, both dressed like peasants; and they
+    took presents like the others, just as if they belonged to the family
+    or acquaintance of the bride or the bridegroom. Here Bruegel found his
+    pleasure in observing the manners of the peasants in eating, drinking,
+    <span class="pagenum" id="Page_20">20</span>dancing, jumping, loving and other fun-making; which things he then
+    very skilfully and carefully rendered again in colors, in water-color
+    as well as in oil, in both which mediums he was extraordinarily
+    talented.” Then Van Mander proceeds to stress the faithfulness and
+    accuracy of Bruegel’s peasant pictures in the details of costumes and
+    movements. In short, Bruegel had begun to paint.</p>
+
+  <p>The earliest dated painting, <a href="#i_16"><cite>Twelve Flemish Proverbs</cite></a>, is
+    interesting only because of its connection with Bruegel; its relative
+    clumsiness of execution and utterly unpictorial conception as a whole
+    render it very likely the first of his attempts in a new medium.
+    However, this picture and the others that must be grouped immediately
+    with it mark the definite emergence of what was thenceforward to be his
+    predominant interest—the life of the peasants, between whom and himself
+    there existed the unbreakable bonds of a common origin and a common
+    destiny. Thus he began at once to paint in accordance with the dictates
+    of his essentially realistic genius, but the first works of capital
+    importance still retain a large admixture of the fantastic spirit
+    which had been running riot in his recent designs for the engravings.
+    These two pictures are the <a href="#i_13"><cite>Carnival and Lent</cite></a> and the <a href="#i_16"><cite>Flemish
+    Proverbs</cite></a> in Berlin, both of the year 1559; in both fantasy is made
+    convincing through realistic treatment, just as the Van Eycks and Roger
+    Van der Weyden had made convincing their religious idealism, Bruegel’s
+    difference from them being simply a difference of subject-matter and
+    a still greater reliance upon realistic skill for its own sake. In
+    the <a href="#i_17"><cite>Children’s Games</cite></a> of the next year there occurs the first
+    complete union on a great scale of realism in both matter and manner;
+    and two years later, with the <a href="#i_18"><cite>Fall of the Rebel Angels</cite></a>, a
+    recurrence in greatly intensified form of the combination between
+    fantastic idea and realistic treatment. This last painting, credited
+    to Jerome Bosch himself until the discovery of Bruegel’s signature,
+    is infinitely superior in conception and execution to anything by the
+    earlier man, and would alone rank its creator as a great painter; yet
+    the greatness it confers upon its maker is not the kind that is most
+    truly Bruegel’s. Through <span class="pagenum" id="Page_21">21</span>all these paintings of the Antwerp period
+    there runs a rapidly increasing technical skill—in drawing, color and
+    design—until the last picture that could possibly have been done before
+    his removal to Brussels, the <a href="#i_19"><cite>Israelites and Philistines</cite></a>, is for
+    minute workmanship a world’s wonder. On a small panel about thirteen
+    by twenty-two inches Bruegel has put several hundred human beings, the
+    largest of whom is less than two and one-half inches, in a landscape
+    setting of great beauty, all done in such detail that one can count
+    the spots on the giraffes far away across the river—and all seen with
+    so careful a regard for values and design that it is a satisfactory
+    picture from whatever distance it is regarded, its details merging into
+    the larger relations as one views it from further off. Craftsmanship of
+    this type in painting can go no farther.</p>
+
+  <figure class="figcenter illowp90" id="i_21">
+    <img src="images/i_21.jpg" alt="">
+    <figcaption>“DULLE GRIET.” &nbsp; &nbsp;1564. &nbsp; &nbsp;ANTWERP, VAN DEN BERGH COLLECTION</figcaption>
+  </figure>
+
+  <h3>3.</h3>
+
+  <p class="drop-cap"><span class="smcap1">The</span> cause of his leaving Antwerp was his marriage, which took place
+    in 1563. His choice had fallen upon the daughter of his first master,
+    Pieter Coeck. Twice during his brief notice on Bruegel, Van Mander
+    refers to the fact that “he had, while she was still small, often
+    carried her in his arms.” Her mother, after the father’s death,
+    had removed to Brussels and there successfully engaged in her own
+    profession of miniature painting; in consenting to the marriage she
+    “stipulated that Bruegel should leave Antwerp and settle down in
+    Brussels, in order that he might efface former love-affairs from his
+    eyes and his mind.” In this marriage was the beginning of what has
+    been well called the Bruegel dynasty. The two sons produced copies and
+    variations of their father’s paintings in such abundance that it is an
+    exceptional<span class="pagenum"><a id="Page_22"></a><a id="Page_23"></a><a id="Page_24"></a><a id="Page_25"></a><a id="Page_26"></a><a id="Page_27"></a>27</span>
+    picture gallery in Europe which does not boast its
+    “<i lang="fr">Breughel le Vieux</i>”; and these sons in their turn fathered a
+    dozen more painters.</p>
+
+  <figure class="figcenter illowp100" id="i_22">
+    <img src="images/i_22.jpg" alt="">
+    <figcaption>THE TOWER OF BABEL. &nbsp; &nbsp;1563. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp100" id="i_23">
+    <img src="images/i_23.jpg" alt="">
+    <figcaption>THE CARRYING OF THE CROSS. &nbsp; &nbsp;1564. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp75" id="i_24">
+    <img src="images/i_24.jpg" alt="">
+    <figcaption>THE CARRYING OF THE CROSS (DETAIL)</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp75" id="i_25">
+    <img src="images/i_25.jpg" alt="">
+    <figcaption>THE CARRYING OF THE CROSS (DETAIL)</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp75" id="i_26">
+    <img src="images/i_26.jpg" alt="">
+    <figcaption>THE ADORATION OF THE KINGS. &nbsp; &nbsp;1564. &nbsp; &nbsp;LONDON, NATIONAL
+      GALLERY</figcaption>
+  </figure>
+
+  <p>But of them all, none approached the greatness of their original,
+    whose six years of married life were filled by the creation of
+    masterpieces—of realistic observation in the <a href="#i_42"><cite>Wedding Feast</cite></a>
+    and the <a href="#i_44"><cite>Peasant Dance</cite></a>; of sheer imagination in the <a href="#i_21"><cite>Dulle
+    Griet</cite></a> and the <a href="#i_29"><cite>Triumph of Death</cite></a>; of narrative power in
+    the <a href="#i_33"><cite>Massacre of the Innocents</cite></a>; of the purest pictorialism in
+    the <a href="#i_37"><cite>Conversion of Paul</cite></a>; of the indescribable <a href="#i_23"><cite>Carrying of
+    the Cross</cite></a>; of realism, imagination, emotion and thought merged
+    into the large harmonies of that great series of five paintings, the
+    <a href="#i_48"><cite>Months</cite></a>.</p>
+
+  <figure class="figcenter illowp75" id="i_27">
+    <img src="images/i_27.jpg" alt="">
+    <figcaption>THE MISANTHROPE. &nbsp; &nbsp;1565. &nbsp; &nbsp;NAPLES, NATIONAL MUSEUM</figcaption>
+  </figure>
+
+  <p>While he was achieving all this ordered beauty of art, the disorders of
+    the life around him were increasing at a fatally rapid pace. In Ghent
+    a mob sacked the Abbey of Saint Peter and, made drunk by the wine of
+    its cellars and the intoxication of destructiveness, ran smashingly
+    at large through the city. In Antwerp another mob totally destroyed
+    the rich and famous church of <em>Notre Dame</em>. Conflicts multiplied
+    between Catholics and Protestants, between civilians and soldiers;
+    bands of foreign mercenaries coursed through the country and open
+    towns. The Duke of Alva’s execution fires cast lurid lights upon the
+    ruin and decimation of what had once <span class="pagenum" id="Page_28">28</span>been the most prosperous region
+    of Europe.</p>
+
+  <p>Of Bruegel’s own reactions to all this his biographer, writing at a
+    time when it was almost a well-forgotten nightmare, makes no mention.
+    Van Mander’s single sentence of direct characterization is this: “He
+    was a very quiet and skilful man, who spoke little but was sociable
+    in society, and loved to frighten his companions, often also his own
+    pupils, with all kinds of goblin noises....” This does little to round
+    out the portrait of Bruegel the man, for once more the emphasis is
+    thrown upon that droll and amusing side of his nature which seems to
+    have appealed most to his own circle and thence been transmitted to Van
+    Mander. But that Bruegel was intensely aware of the tragedies about
+    him is evident enough in his works. The things he saw for himself are
+    set down in such pictures as the <a href="#i_33"><cite>Massacre of the Innocents</cite></a>, yet
+    with such an all-sufficing objectiveness that it requires an effort of
+    mind to realize that that very convincingness comes from his having
+    felt the tragic reality he records. But it is impossible to escape
+    from the overwhelmingly personal quality of the thoughts set forth in
+    the hell-mouth horrors of the <a href="#i_21"><cite>Dulle Griet</cite></a> and the apocalyptic
+    terrors of the <a href="#i_29"><cite>Triumph of Death</cite></a>. Moreover, Van Mander writes
+    that Bruegel had made many other “inventions” which were “so satirical
+    and mordant that on his death-bed he ordered them burnt by his wife,
+    either from repentance or from fear that his wife would get into
+    trouble on account of them.”</p>
+
+  <figure class="figcenter illowp80" id="i_28">
+    <img src="images/i_28.jpg" alt="">
+    <figcaption>THE PROVERB OF THE BIRD-NESTER. &nbsp; &nbsp;1564–65? &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>Not many months before this happened <span class="pagenum"><a id="Page_29"></a><a id="Page_30"></a>30</span>the people of the Low Countries
+    commenced their final effort of revolt which was to establish their
+    freedom not until eleven years later. Bruegel left a world that was
+    hardly less black than the death into which he descended with open
+    eyes. At that very moment Montaigne was setting about to depict one
+    entire man with a vision as veracious as that of Bruegel; Cervantes was
+    soon to rival in words Bruegel’s power of making the fantastic real;
+    and only forty years later Shakespeare was to accomplish a re-creation
+    of human life that is more complete than Bruegel’s simply because the
+    medium of literature itself permits a more comprehensive embodiment
+    of the soul of man than is possible to the medium of paint. And the
+    painter who more than any other kept close to life belongs in the
+    company of these three.</p>
+
+  <figure class="figcenter illowp100" id="i_29">
+    <img src="images/i_29.jpg" alt="">
+    <figcaption>THE TRIUMPH OF DEATH. &nbsp; &nbsp;1565 OR 1566. &nbsp; &nbsp;MADRID, PRADO</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_30">
+    <img src="images/i_30.jpg" alt="">
+    <figcaption>THE TRIUMPH OF DEATH (DETAIL)</figcaption>
+  </figure>
+
+  <h3>4.</h3>
+
+  <p class="drop-cap-s"><span class="smcap1">The</span> subject-matter of Bruegel’s great paintings is limited only by the
+    world and life.<a id="FNanchor_2" href="#Footnote_2" class="fnanchor">[2]</a> The whole cycle of nature is in them—the seasons as
+    they pass over mountain, plain and moving waters; the dazzling beauty
+    of the southern sea, the northern cold. The entire range of human life
+    is in them; somewhere in these multitudes every emotion finds its
+    expressive gesture. Even all the animals that are intimately a part of
+    human life are given in their degrees of individuality. These pictures
+    seem to set before the eye every experience possible to man.</p>
+
+  <div class="footnote"><a id="Footnote_2" href="#FNanchor_2" class="label">[2]</a> The succeeding remarks upon Bruegel’s art and mind,
+    disregarding both the minor and the debatable works, are based
+    specifically upon the paintings which are characteristically great.</div>
+
+  <p>Always a tale is being told, but always it is story-telling of a
+    very definite kind. It is <span class="pagenum" id="Page_31">31</span>never a continuous narrative with a plot
+    involving the same characters in different circumstances. Thus Bruegel
+    was never obliged to arrange successive episodes of the same story
+    within one frame, as the older painters had done. All the things that
+    happen in his paintings could happen—do happen—just as he shows them,
+    at the same time and in just the relationship to each other that he
+    depicts. He always observes time unity and pulls together his wealth of
+    episode and by-play through unity of theme.</p>
+
+  <figure class="figcenter illowp90" id="i_31">
+    <img src="images/i_31.jpg" alt="">
+    <figcaption>THE TRIUMPH OF DEATH (DETAIL)</figcaption>
+  </figure>
+
+  <p>But on a given theme, at first, he attempted to say everything than
+    can be said about it. The picture in Berlin illustrates seventy
+    proverbs; the <a href="#i_17"><cite>Children’s Games</cite></a> is said to contain every one of
+    the one hundred and fifty-four varieties of play listed by Rabelais
+    as the games of Gargantua; the <a href="#i_22"><cite>Tower of Babel</cite></a> has been called
+    a builders’ handbook; the <a href="#i_33"><cite>Massacre of the Innocents</cite></a> apparently
+    depicts every possible attitude of parental grief and frenzy. This
+    exuberance of episode, this encyclopedic narrative utterance, had its
+    literary counterpart in the book just mentioned; it was in full accord
+    with the taste of the time, and Bruegel’s personal aptitude had been
+    fostered and disciplined by his long succession of drawings for the
+    plates published by Cock. For the paintings of this type he has thought
+    out every possible visual aspect of his story-matter and swept them all
+    into a unity of design not less remarkable than his unity of theme.</p>
+
+  <figure class="figcenter illowp100" id="i_32">
+    <img src="images/i_32.jpg" alt="">
+    <figcaption>THE NUMBERING AT BETHLEHEM. &nbsp; &nbsp;1566. &nbsp; &nbsp;BRUSSELS, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp100" id="i_33">
+    <img src="images/i_33.jpg" alt="">
+    <figcaption>THE MASSACRE OF THE INNOCENTS. &nbsp; &nbsp;1566? &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>The astounding thing to be noted just here is the completeness with
+    which such an excessive<span class="pagenum"><a id="Page_32"></a><a id="Page_33"></a><a id="Page_34"></a>34</span> amount of anecdote is arranged into a
+    functioning organism of narrative. In the <a href="#i_23"><cite>Carrying of the Cross</cite></a>
+    the movement of every one of the five hundred figures, the very
+    expression of every face, is determined by a completely organized
+    story-action. All the figures, even the minutest ones, play their
+    parts in the whole design as such; but their momentary relations as
+    human beings, equally complex, have been thought out and set down with
+    equal thoroughness. Every episode is a bar, every gesture a note, in
+    Bruegel’s orchestrated narrative.</p>
+
+  <figure class="figcenter illowp90" id="i_34">
+    <img src="images/i_34.jpg" alt="">
+    <figcaption>THE MASSACRE OF THE INNOCENTS (DETAIL)</figcaption>
+  </figure>
+
+  <p>But other paintings show that Bruegel realized the fundamental weakness
+    of this—the weakness of diversity of visual motive, distraction from
+    the pictorial whole. He exhibited a tendency towards the elimination
+    of all side-play, towards the reduction of subject-matter to a single
+    motive and a reliance upon emotional unity for the abiding impression.
+    His picture-making is still story-telling in that something happens
+    in terms of human action; but it is a single and casual event, and
+    the main interest is shifted from events to design and color as the
+    expression of mood. In the <a href="#i_48"><cite>Months</cite></a> he forgot all about narrative
+    complexity for its own sake, fixed his attention on the pure pictorial
+    beauty of people and of nature, and sought only the emotional meaning
+    of his theme.</p>
+
+  <h3>5.</h3>
+
+  <p class="drop-cap-s"><span class="smcap1">The</span> nature of Bruegel’s work previous to taking up painting is written
+    at large and in detail over his early technical habits, but in these
+    also can be traced a development corresponding to the change just noted
+    in subject-matter.</p>
+
+  <figure class="figcenter illowp75" id="i_35">
+    <img src="images/i_35.jpg" alt="">
+    <figcaption>THE MASSACRE OF THE INNOCENTS (DETAIL)</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp100" id="i_36">
+    <img src="images/i_36.jpg" alt="">
+    <figcaption>THE FALL OF ICARUS.  &nbsp; &nbsp;BRUSSELS, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp100" id="i_37">
+    <img src="images/i_37.jpg" alt="">
+    <figcaption>THE CONVERSION OF SAINT PAUL. &nbsp; &nbsp;1567. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>In the earlier pictures color in general is <span class="pagenum"><a id="Page_35"></a><a id="Page_36"></a><a id="Page_37"></a><a id="Page_38"></a>38</span>conceived somewhat as
+    the worker in mosaic is compelled by his material to conceive it—as a
+    weaving-together of brilliant bits of pure color into a color design
+    which is itself thought out independently of other technical qualities.
+    There is harmony and richness, but there is not that melting tonality
+    which afterwards came to be looked upon as the last word in painting.
+    Above all else, there is an unbelievable brilliancy, especially where
+    Bruegel made a lavish use of vermilion. The chain of soldiers woven
+    through the multitude in the <a href="#i_23"><cite>Carrying of the Cross</cite></a> is one
+    of the most daring things to be found in painting; but for general
+    sumptuousness of color approaching to the fusion of later times there
+    is, outside of the <a href="#i_48"><cite>Months</cite></a>, no equal in Bruegel’s work to the
+    <a href="#i_37"><cite>Conversion of Paul</cite></a>. And always it is color used for its own
+    sake, with great sensuous delight. Yet always, again excepting the
+    <a href="#i_48"><cite>Months</cite></a>, it is color laid on to form which has already been
+    conceived as drawing; the color, superb in itself, follows the form
+    superbly; but the color and the drawing exist independently of one
+    another.</p>
+
+  <figure class="figleft illowp60" id="i_38">
+    <img src="images/i_38.jpg" alt="">
+    <figcaption>THE WINE OF SAINT MARTIN (FRAGMENT). &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>At the beginning of his painting career it was his drawing especially
+    which was determined by his work for the engravers. For the masculine
+    style of engraving that prevailed in his day the preparatory drawings
+    had to show absolute precision of outline. The edges of everything
+    had to be clean and unmistakable in order that the engraver might
+    know what was intended; the artist of the first instance had to make
+    it impossible for the engraver to mistake his meaning as to this
+    contour or that shape. Drawing in this manner for years before he
+    began to paint, Bruegel necessarily continued to do so afterwards.
+    This accounts for the prevailingly silhouette character of his
+    multitudes of tiny figures. Often-times, even from the beginning, the
+    form that meets the eye within the shape is substantially filled out
+    without being accompanied by the feeling of all-aroundness; but a
+    full three-dimensional quality is more and more often attained until
+    in the <a href="#i_37"></a>Paul</cite><cite>, again, it fills the picture to a degree elsewhere
+    unequalled in Bruegel’s work.</p>
+
+  <p><span class="pagenum" id="Page_39">39</span></p>
+
+  <figure class="figcenter illowp90" id="i_39a">
+    <img src="images/i_39a.jpg" alt="">
+    <figcaption>THE PARABLE OF THE BLIND MEN. &nbsp; &nbsp;1568. &nbsp; &nbsp;NAPLES, NATIONAL MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_39b">
+    <img src="images/i_39b.jpg" alt="">
+    <figcaption>THE LAND OF COCKAIGNE. &nbsp; &nbsp;1567. &nbsp; &nbsp;MUNICH, ALTE PINAKOTHEK</figcaption>
+  </figure>
+
+  <p><span class="pagenum" id="Page_40">40</span></p>
+  <figure class="figcenter illowp75" id="i_40">
+    <img src="images/i_40.jpg" alt="">
+    <figcaption>THE CRIPPLES. &nbsp; &nbsp;1568. &nbsp; &nbsp;PARIS, LOUVRE</figcaption>
+  </figure>
+
+  <p>But another consequence of his early professional training—and a
+    consequence which enabled him to accomplish some of his most amazing
+    feats—was his skill in composition. His training in draftsmanship
+    gave him the power to render exactly all details that contribute
+    to individuality of character, and the simultaneous training in
+    composition taught him how to arrange immense numbers of such
+    individualized figures without loss of mass unity. Was it the Alpine
+    mountain-sides or merely the upper window of a house on a village
+    square that suggested to him the device of a slightly elevated
+    viewpoint? It is this more than anything else that enables him
+    to impose upon his multitudes that order of art by which may be
+    expressed the disorder of life; and it is this that gives him his long
+    perspectives of village streets or far horizons dominated by oblique
+    lines. These last, starkly visible at first and gradually becoming more
+    broken and concealed, constitute the characteristic mark of Bruegel the
+    designer.</p>
+
+  <p>But it is in design that there is to be discerned the least amount
+    of technical advance on Bruegel’s part; what he learned before he
+    began to paint seems to have come nearer to sufficing him in design
+    than in drawing or in color. His composition scheme in the set of the
+    <a href="#i_48"><cite>Months</cite></a> is shockingly, though intentionally, repetitious; in the
+    hands of a less vigorous artist it must quickly have become the deadest
+    recipe. He divides his panel into two practically equal parts by a bold
+    diagonal from one upper corner to the opposite lower one; one of these
+    parts he fills with things and people seen close at hand, and the other
+    <span class="pagenum" id="Page_41">41</span>with a far-spreading panorama. And he does it five times over with
+    such freshness that doing it seven times more does not seem beyond his
+    powers. But the design remains a pattern, conceived in the same way as
+    the large composite landscapes done soon after his return from Rome.</p>
+
+  <figure class="figcenter illowp75" id="i_41">
+    <img src="images/i_41.jpg" alt="">
+    <figcaption>THE MAGPIE ON THE GALLOWS. &nbsp; &nbsp;1568. &nbsp; &nbsp;DARMSTADT, MUSEUM</figcaption>
+  </figure>
+
+  <p>In drawing and color, on the other hand, the <a href="#i_48"><cite>Months</cite></a> show a
+    marked departure from earlier habits in the direction of an essentially
+    modern practice. In the drawing as such there is an increase in
+    looseness with no loss of surety; tightness is sacrificed, but not
+    precision. The figures are still silhouettes to a great extent, but
+    there is an approach to the coalescence of color and drawing. In color
+    by itself there is ever an opposition of large areas of some shade of
+    brown and some shade of green, and a weaving of these areas together
+    by bits of each color in the other and of other colors in both. Though
+    there is never the full impressionistic fusing of edges in atmosphere,
+    there is yet a decided approximation to the vision of a genuinely
+    naturalistic landscape painter, as distinguished from the vision of a
+    draftsman or a miniaturist.</p>
+
+  <p>While this is true, and must be accounted to Bruegel as a merit, an
+    evidence of mental and technical growth, it is still in a measure
+    unfair to the never-failing largeness and unity of vision in the
+    earlier work. Whether the other qualities of this work be regarded as
+    merits or defects in themselves depends, of course, upon the technical
+    tenets or preferences of him who makes the judgment. But in Bruegel
+    they were neither merits nor defects; they were characteristics which
+    had to <span class="pagenum"><a id="Page_42"></a><a id="Page_43"></a>43</span>be present in his pictures if he painted at all. They were
+    necessitated by the time in which he lived and by his professional
+    practice previous to painting. They were as much a part of him as his
+    fondness for telling stories; and in the fluctuations of taste stranger
+    things have already happened than would be the return of even this
+    latter element to professional as well as popular favor.</p>
+
+  <figure class="figcenter illowp100" id="i_42">
+    <img src="images/i_42.jpg" alt="">
+    <figcaption>WEDDING FEAST. &nbsp; &nbsp;1568? &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_43">
+    <img src="images/i_43.jpg" alt="">
+    <figcaption>WEDDING FEAST (DETAIL)</figcaption>
+  </figure>
+
+  <h3>6.</h3>
+
+  <p class="drop-cap-s"><span class="smcap1">In</span> Bruegel’s time story-telling in pictures generally was still one
+    of the principal means of communicating ideas—even, perhaps mainly,
+    ideas that were not inherently pictorial; prints were still the nearest
+    things to books in popular circulation. Moreover, a nation living
+    under the necessity of never speaking out openly on either politics
+    or religion naturally resorted to symbol, the concrete proverb or the
+    image that said one thing and meant another. The print of the big and
+    little fish not only meant that the great oppressed the small but
+    carried an idea beyond the words of the proverb in showing the big fish
+    ripped up and disgorging; and upon a people so apt at interpreting
+    images the significance of that would not be lost. This people could
+    not only take a hearty enjoyment of the good things of life but they
+    could also face the whole of it without shrinking from any part of it,
+    whether of grossness or of terror. For the latter, indeed, they even
+    had a gusto and the former they laughed away with a saving healthiness.
+    The distinguishing mark of their living and their thinking was a robust
+    realism.</p>
+
+  <p><span class="pagenum" id="Page_44">44</span></p>
+
+  <figure class="figcenter illowp100" id="i_44">
+    <img src="images/i_44.jpg" alt="">
+    <figcaption>PEASANT DANCE. &nbsp; &nbsp;1568? &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p><span class="pagenum" id="Page_45">45</span></p>
+
+  <figure class="figcenter illowp75" id="i_45">
+    <img src="images/i_45.jpg" alt="">
+    <figcaption>PEASANT DANCE (DETAIL)</figcaption>
+  </figure>
+
+  <p><span class="pagenum" id="Page_46">46</span></p>
+
+  <p>In Pieter Bruegel there emerged from among them a man of genius in
+    complete sympathy with their realistic attitude towards life; knowing
+    it from childhood, he gave it in his art a more complete expression
+    than it had ever had before. The whole originality and fertility of
+    his mind were for long expended upon feeding the popular taste not
+    only for the familiar or exotic beauty of nature but also for a rough
+    philosophy, unorganized but none the less genuine; and a habit so well
+    established in him by years of labor would not vanish all at once
+    even when more purely painter-like interests assumed for him a major
+    importance. His predecessors in painting had been realistic in their
+    measure; in them, however, realism was largely confined to details of
+    execution and was more than counterbalanced by markedly idealistic
+    conceptions. Even in the grotesqueries of Bosch the older disparity
+    between idea and embodiment existed; the diabolism in them was only
+    the obverse of the conventional religious idealism, and its distance
+    from a true realism of content remained the same. When Bruegel came
+    to painting, he both carried the manner of realism farther than his
+    predecessors had done and informed that manner with its appropriately
+    realistic matter, bringing about a new harmony between the body and the
+    spirit of the art. He became the first complete realist in the history
+    of painting.</p>
+
+  <figure class="figcenter illowp90" id="i_46">
+    <img src="images/i_46.jpg" alt="">
+    <figcaption>MARINE. &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>The <a href="#i_18"><cite>Fall of the Rebel Angels</cite></a> is the nearest thing to a
+    rule-proving exception among Bruegel’s great works, the single one
+    which exhibits any of the older disparity between container and
+    content; and this picture, great as it is, could vanish without
+    impairing in the least Bruegel’s essential greatness. To examine
+    the Berlin <a href="#i_16"><cite>Proverbs</cite></a> in detail is to <span class="pagenum" id="Page_47">47</span>get a feeling of being
+    among mad folks because so many of the sayings here illustrated turn
+    upon outlandish actions; but as a picture it is a piece of masterly
+    realistic sanity showing a whole village, in which some of the
+    inhabitants happen to be crazy, intensely busy about its own affairs.
+    The <a href="#i_29"><cite>Triumph of Death</cite></a>, so far from being a piece of wild and
+    gross fancy, is actually the lucid statement of an idea as true as
+    any gesture in the picture; it is precisely the relentlessness of its
+    realism in thought as well as in embodiment which frightens people into
+    calling it untrue. The latter two paintings only show that if an artist
+    is realist enough, if he penetrates sufficiently into the actual, he
+    necessarily becomes imaginative; they only reiterate and strengthen
+    Bruegel’s right to be considered the supreme realist in painting.</p>
+
+  <figure class="figcenter illowp90" id="i_47">
+    <img src="images/i_47.jpg" alt="">
+    <figcaption>FLEEING SHEPHERD. &nbsp; &nbsp;1569? &nbsp; &nbsp;PHILADELPHIA, JOHNSON COLLECTION</figcaption>
+  </figure>
+
+  <p>Part of his realism is his refusal to depict what he did not feel.
+    Only once did he venture upon any of the religious emotionalism that
+    had played so large a part in the work of his predecessors, and then
+    he found the emotion so foreign to his own feelings that he openly
+    borrowed the imagery of it; in relation to the great panoramic realism
+    of the <a href="#i_23"><cite>Carrying of the Cross</cite></a>, the group of mourning women
+    remains a mere formalism, dissociated in spirit and in manner from
+    all about it. Jesus himself is simply an unfortunate creature whose
+    approaching execution is the pretext for this holiday. What passes for
+    the conversion of Paul might be the delusion of a man knocked in the
+    head on falling from a shying horse; there is about the event none of
+    the conventional supernaturalism because for Bruegel that sort of thing
+    was not real. The religious subject as such disappears from his work;
+    and this, coming after <span class="pagenum"><a id="Page_48"></a><a id="Page_49"></a>49</span>the ecstatic idealisms of his predecessors,
+    amounts to the expression of an idea concerning the significance—or
+    lack of it—inherent in the churchly religion. He will have nothing
+    to do with what is not human; not even nature enters into the great
+    paintings except as a setting that enhances, by sympathy or contrast,
+    the emotional life of human beings. To these, whom he knows and loves,
+    Bruegel gives himself wholly, to share in their sorrows and their joys.
+    His religion is that of the great humanists in all ages, and his faith
+    is given only to life itself.</p>
+
+  <figure class="figcenter illowp100" id="i_48">
+    <img src="images/i_48.jpg" alt="">
+    <figcaption>DARK DAY (JANUARY?). &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_49">
+    <img src="images/i_49.jpg" alt="">
+    <figcaption>DARK DAY (DETAIL)</figcaption>
+  </figure>
+
+  <p>Part of his realism is the robust laughter which is the only solution
+    for the fix in which human beings find themselves. It is the spirit
+    that animated Rabelais in describing the birth of his hero and
+    Shakespeare in creating Falstaff. To come closer home to Bruegel,
+    perhaps, it is the spirit of <cite>Till Eulenspiegel</cite>, whose gross
+    pleasanteries were probably relished by the painter along with the
+    rest of his generation. Bruegel’s passion for completeness in his
+    realism abolishes privacy, and the state of affairs brought to pass by
+    this slicing away of all walls is saved only by humor. Humor is the
+    safety-valve for a spirit resolute to probe life to its last refuge—to
+    probe life, but not to break through by main force, as attempted by
+    later realists so-called.</p>
+
+  <figure class="figcenter illowp100" id="i_50">
+    <img src="images/i_50.jpg" alt="">
+    <figcaption>HUNTERS IN THE SNOW (FEBRUARY?). &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <p>Another element in Bruegel’s realism is the objectivity of his work.
+    Van Mander’s anecdote already quoted shows that Bruegel went <span class="pagenum"><a id="Page_50"></a><a id="Page_51"></a>51</span>among
+    the peasants, not as a professional artist in search of material, but
+    as a participator in their life; and the great pictures themselves
+    strikingly bear this out. This is not to say that Bruegel never worked
+    directly from life, for there are many drawings which could not have
+    been done otherwise—a team of horses resting, soldiers standing in the
+    way, old market-women squatting beside their wares. But when he came to
+    paint the great pictures, Bruegel worked from a memory stocked with the
+    gestures and actions of people who are unconscious of being watched.
+    Bruegel’s mind was centered upon their life and he was concerned with
+    technic hardly beyond the point where it would enable him to crowd
+    all their life into his given space and shape. His concentration upon
+    the story he was telling, from the encyclopedic narrative of the
+    early works to the simple and straightforward emotionalism of the
+    <a href="#i_48"><cite>Months</cite></a>, put him on the crest of a wave of energy which carried
+    him through many an undertaking that would have been impossible for a
+    more self-conscious man. We who see the pictures now are unconscious
+    of the painter because he was himself lost in his subject; and because
+    of this, also, we are unconscious of ourselves. “No glance ever strays
+    across the footlights to the audience,” wrote Meier-Graefe of Hogarth’s
+    scenes. In Bruegel’s work there are no actors, no footlights and no
+    audience. There is only life and participation in life by painter and
+    by us.</p>
+
+  <p>And everywhere in these pictures it is the life of Bruegel’s own
+    time. His predecessors had clothed religious themes in contemporary
+    dress, but the outer and the inner remained separate things; Bruegel,
+    retaining the outer, put into it its own proper content. He ousted
+    religious stories by contemporary stories. These he painted so
+    completely that a thorough sociological knowledge of the age might be
+    founded upon or tested by his pictures. The whole life of the time is
+    set down by a hand that never falsifies, that swerves neither to the
+    right of idealization nor to the left of caricature.</p>
+
+  <p>Yet to leave him as a painter of contemporary manners only would be
+    almost as false to his greatness as to consider him only as Bruegel the
+    Droll. For he penetrates below the temporary appearances of his time to
+    the permanent in human nature. His pictures can be a means of access
+    to the life of his age, to be sure; but no lover of them would think
+    of using them in this fashion. The important thing is that they give
+    access to a life that is of more than one age; under the costume of the
+    time exists the same humanity that now wears another dress.</p>
+
+  <p>In giving himself over so unreservedly to the impermanent, Bruegel took
+    what was for him the only way to the permanent. This cannot be captured
+    by going out after a vague and unlocalized something called life in
+    general; what is presented to the artist for his use is always life in
+    particular. There is an all-life in the steady and swelling succession
+    of human generations; but the only means of access to that is the
+    now-life. The great artist’s major accomplishment lies in revealing the
+    universal through the particular, the permanent through the transitory,
+    the inevitable through the accidental.</p>
+
+  <p>This Bruegel does; and how well he does it is to be found by analyzing
+    the thought behind his varied rendering of events and people. Even in
+    his early pictures each creature has his own individuality and yet is
+    part of the crowd, which remains a crowd in spite of all detail; each
+    individual retains his own value of personality and yet is integrated
+    into a collective being. Bruegel’s minute accuracy of drawing expresses
+    his love for the individual as such; his great masses of people express
+    his desire to see life largely and as an interwoven whole. Moreover,
+    the device of making the ostensible subject of a picture an almost
+    invisible incident in it is an expression of an idea as to the relative
+    importance of the individual and what happens to him. Though the
+    actions of the <a href="#i_23"><cite>Carrying of the Cross</cite></a> and the <a href="#i_37"><cite>Conversion of
+    Paul</cite></a> do actually center around the subject-incident, the incident
+    itself is reduced almost to the vanishing-point; so that the story
+    emphasis is thrown entirely upon the larger life of which the incident
+    is only the temporary focus. The <a href="#i_36"><cite>Fall of Icarus</cite></a> likewise
+    expresses this heresy <span class="pagenum"><a id="Page_52"></a><a id="Page_53"></a>53</span>against conventional thinking as to what is
+    truly sublime; only here the unimportance of a particular event is made
+    more emphatic by such a detail as the position of the shepherd as well
+    as by the large indifference of this great luminous calm expanse of
+    land and sea and sky.</p>
+
+  <figure class="figcenter illowp75" id="i_52">
+    <img src="images/i_52.jpg" alt="">
+    <figcaption>HUNTERS IN THE SNOW (DETAIL)</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_53">
+    <img src="images/i_53.jpg" alt="">
+    <figcaption>HAYMAKING (JUNE?). &nbsp; &nbsp;RAUDNITZ, COLLECTION OF PRINCE LOBKOWITZ</figcaption>
+  </figure>
+
+  <p>Moreover, the sequence of changes in the relative importance of the
+    human figures in the paintings is but the story of Bruegel’s developing
+    conception of the relative importance of man in the scheme of things.
+    In one group of pictures the individual, though fully personalized, is
+    a part of the crowd and the crowd a mass of insects swarming over the
+    landscape. In another group of large-figured peasant subjects man is
+    all-important, filling the whole and shutting nature out. The former
+    are amazing, and one can hardly get too much of them; the latter are
+    interesting and one likes them long. But for the final expression of
+    his mind one must turn to the set of the <a href="#i_48"><cite>Months</cite></a>; these five,
+    with the addition of the <a href="#i_37"><cite>Paul</cite></a> and the <a href="#i_36"><cite>Icarus</cite></a>, form the
+    summit of Bruegel’s art. In them Bruegel reached the solution of the
+    two problems of his life, the life of nature and the life of man; and
+    the solution was the life of man in nature.</p>
+
+  <p>The <a href="#i_48"><cite>Months</cite></a> sum up his life’s endeavor both in the material
+    he had all along been dealing with and in the conceptions between
+    which all along he had been alternating. They are full of motives and
+    incidents taken from his earlier works—the church he drew so often,
+    children at their games, the great stretches of landscape that he
+    loved. But all things are adjusted to one another in a new way; the
+    people are seen neither too large nor too small, but in a perfect
+    relationship to <span class="pagenum"><a id="Page_54"></a><a id="Page_55"></a><a id="Page_56"></a>56</span>an immensely embracing nature; and each picture is
+    pervaded by an unbroken harmony of mood. This set marks the attainment
+    of final insight into everything that had concerned him; they
+    constitute his acceptance and affirmation of life.</p>
+
+  <figure class="figcenter illowp100" id="i_54">
+    <img src="images/i_54.jpg" alt="">
+    <div class="attl"><i>Courtesy of the Metropolitan Museum of Art.</i></div>
+    <figcaption class="clear">THE HARVESTERS (AUGUST?). &nbsp; &nbsp;NEW YORK, METROPOLITAN MUSEUM OF ART</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp75" id="i_55">
+    <img src="images/i_55.jpg" alt="">
+    <figcaption>THE RETURN OF THE HERDS (NOVEMBER?). &nbsp; &nbsp;VIENNA, MUSEUM</figcaption>
+  </figure>
+
+  <figure class="figcenter illowp90" id="i_56">
+    <img src="images/i_56.jpg" alt="">
+    <div class="attl"><i>Courtesy of the Metropolitan Museum of Art.</i></div>
+    <figcaption class="clear">THE HARVESTERS (DETAIL)</figcaption>
+  </figure>
+
+  <h3>7.</h3>
+
+  <p class="drop-cap-s"><span class="smcap1">The</span> more Bruegel’s work is studied the stronger grows the feeling that
+    almost everything may be attributed to him. To go to Vienna and through
+    that group of fifteen pictures to come into direct contact with his
+    mind across three hundred and fifty years is to be convinced that his
+    is one of the inexhaustible minds of the world. The material brilliancy
+    of the painting is more than matched by the brilliancy of the creative
+    soul behind them. Whether he himself was conscious of all that can now
+    be perceived in his work does not much matter; whether it came there
+    with him aware or unaware, it is enough to make him superbly great. But
+    this much is true: the more his mind is apprehended, the more vast and
+    purposeful it appears.</p>
+
+  <p>He was fortunate in finding his means of expression in what was then
+    a popular art; everything about that art was so alive that it drew
+    to itself some of the greatest minds of the time. There existed a
+    tremendous amount of give-and-take between the artist and his age, and
+    this degree of interaction it was which had most to do with endowing
+    both art and artist with vitality; they were fed from sources outside
+    of and larger than themselves. Thus it was that Bruegel attained to so
+    comprehensive an expression of himself and his age together that his
+    work has become one of the permanent things of art.</p>
+
+  <p>Each picture is a completely functioning organism with several
+    different aspects. There is the aspect of story-telling, that of
+    technical picture-making and that of philosophic thought. Each aspect
+    functions harmoniously with the others. Not only can one analyze out at
+    will the elements proper to each aspect, but one can move from one to
+    <span class="pagenum"><a id="Page_57"></a><a id="Page_58"></a>58</span>another without any feeling of shifting gear or changing speed. (The
+    one exception is the group of mourning women in the <a href="#i_23"><cite>Carrying of the
+    Cross</cite></a>.) All these aspects function at the same mental rate. They
+    are all interwoven into powerful wholes. Every picture is a world in
+    itself, and coming to know them is one of the completest experiences
+    that can be found anywhere in the art of painting.</p>
+
+  <figure class="figcenter illowp75" id="i_57">
+    <img src="images/i_57.jpg" alt="">
+    <figcaption>THE RETURN OF THE HERDS (DETAIL)</figcaption>
+  </figure>
+
+  <p>Yet even with this completeness of expression attained, one has before
+    Bruegel’s work a feeling of still more behind, an immensity of mind
+    larger than any art can be. It is the feeling one has before Michelangelo,
+    but not before Raphael; before Shakespeare, but not before
+    Marlowe. The greater ones are not only greater in their art, but they
+    have something left over in themselves which their art suggests but
+    does not directly express. Of this greater company is Pieter Bruegel.</p>
+
+  <p>There are purer painters, but for the purity of their art they pay
+    the price of going without something of importance to a complete
+    life. And even their gain in intensity seems hardly a gain in the
+    face of Bruegel’s intensity on all the levels of his completeness.
+    He transposes all life into his pictures in a scale of relative
+    relationship that preserves the values of human life itself. Every
+    other painter lacks something or has something in excess. Bruegel is
+    the most comprehensive and the best balanced, the most energetic and
+    the mellowest. Of all painters he is the greatest realist, and of them
+    all the most humane.</p>
+
+  <figure class="figcenter illowp90" id="i_58">
+    <img src="images/i_58.jpg" alt="">
+    <figcaption>THE RETURN OF THE HERDS (DETAIL)</figcaption>
+  </figure>
+
+  <hr class="chap x-ebookmaker-drop">
+  <div class="chapter">
+    <span class="pagenum" id="Page_59">59</span>
+    <h2 class="nobreak" id="BIBLIOGRAPHY">AN ANNOTATED BIBLIOGRAPHY</h2>
+  </div>
+
+  <p class="drop-cap-s"><span class="smcap1">The</span> object of the following book-list is to mention not everything
+    that has been printed about Pieter Bruegel but only such volumes and
+    articles as have definite value. The major cause of its shortness,
+    however, is the fact that the literature of the subject is surprisingly
+    small in quantity; in English, particularly, there is almost nothing
+    beyond short paragraphs in some histories of art and the usual
+    unilluminating brevities of general reference works.</p>
+
+  <p class="hang"><span class="smcap">Pieter Bruegel l’Ancien.</span> Son Oeuvre et son Temps. Par <span class="smcap">René
+    Van Bastelaer</span> et <span class="smcap">Georges Hulin De Loo</span>. Bruxelles: G.
+    Van Oest &amp; Cie.: 1907.</p>
+
+  <p>This, the first volume to be published on Bruegel, remains the standard
+    work. For the handsomeness and completeness of its reproductions
+    combined with the accuracy and thoroughness of its text, treating every
+    aspect of the painter’s life and work, it is a notable accomplishment
+    in book-making and in scholarship. What has since been written and
+    the pictures that have since been discovered still do no more than
+    supplement certain phases of it; nor can it be superseded until someone
+    is prepared to give time and money to a thorough search of European
+    galleries and private collections. It is now, however, somewhat
+    difficult to obtain.</p>
+
+  <p class="hang"><span class="smcap">Les Estampes de Peter Bruegel l’Ancien.</span> Par <span class="smcap">René Van
+    Bastelaer</span>. Bruxelles: G. Van Oest &amp; Cie.: 1908.</p>
+
+  <p>Within its chosen field this volume also remains the standard and needs
+    only supplementing by later researches. Its 278 plates reproduce all
+    the prints then thought to be by Bruegel or after his designs.</p>
+
+  <p class="hang"><span class="smcap">Pierre Bruegel l’Ancien.</span> Par <span class="smcap">Charles Bernard</span>.
+    Bruxelles: G. Van Oest &amp; Cie.: 1908.</p>
+
+  <p>This, which appeared immediately after the two preceding volumes, may
+    fairly be described as a good popularization of them, with additional
+    historical material drawn from other sources. The thirty reproductions
+    are very good half-tones; the text gives a satisfactory account of the
+    painter’s life and times, although there is too much reliance upon the
+    mere subject-matter of the pictures and although parts of Van Mander’s
+    clumsy narrative are transposed into French of debatable suavity. It is
+    the only generally available biography in French. To any reader of it
+    my indebtedness to it for facts (other than those given by Van Mander)
+    and my occasional difference of interpretation will be equally evident.</p>
+
+  <p class="hang"><span class="smcap">Der Bauern-Bruegel.</span> Von <span class="smcap">W. Hausenstein</span>. München &amp;
+    Leipzig: R. Piper &amp; Co.: 1910.</p>
+
+  <p>This is commended by Herr Friedländer (see eighth item) as a portrait
+    of the man Bruegel; as a discussion of his work, however, it has been
+    superseded in German by Herr Friedländer’s own book.</p>
+
+  <p class="hang"><span class="smcap">“The Adoration of the Kings” by Pieter Brueghel the Elder.</span> By
+    <span class="smcap">C. J. Holmes</span>. In The Burlington Magazine; vol xxxviii, no.
+    ccxv: London: February 1921.</p>
+
+  <p class="hang"><span class="smcap">The Harvesters by Pieter Bruegel the Elder.</span> By <span class="smcap">B[ryson]
+    B[urroughs]</span>. In The Bulletin of the Metropolitan Museum of Art:
+    vol. xvi, no. 5: New York: May 1921.</p>
+
+  <p>The fact that these two articles ostensibly deal each with a single
+    picture should not obscure either their general interest or their
+    significance as indications and instruments of the contemporary
+    tendency to assign to Bruegel a higher rank than he has had heretofore.</p>
+
+  <p class="hang"><span class="smcap">Von Eyck bis Bruegel.</span> Studien zur Geschichte der
+    Niederländischen Malerei. Von <span class="smcap">Max J. Friedländer</span>. Berlin:
+    Julius Bard: 1921. (Of Bruegel: <abbr title="page">p.</abbr> 169 to end).</p>
+
+  <p>The main point of interest about Bruegel in this book is that the
+    author gives a catalogue of paintings which differs considerably, both
+    in its omissions and in its additions, from that given by <abbr title="Monsieur">M.</abbr> Hulin (see
+    first item).</p>
+
+  <p class="hang"><span class="smcap">Pieter Bruegel.</span> Von <span class="smcap">Max J. Friedländer</span>. Berlin:
+    Propyläen-Verlag: 1921.</p>
+
+  <p>This is the standard general work in German, and contains a trustworthy
+    translation of the entire text of Van Mander concerning Bruegel. Even
+    those who do not read German might well possess this book for the
+    clearness and frequent brilliancy of its 101 half-tone reproductions,
+    the majority of which are from drawings and prints. Herr Friedländer is
+    the only continental scholar so far whose work takes cognizance of the
+    picture now in the Metropolitan Museum.</p>
+
+  <p class="hang"><span class="smcap">Bruegel.</span> Von <span class="smcap">Kurt Pfister</span>. Leipzig: Insel-Verlag:
+    1921.</p>
+
+  <p>This short essay merits notice as a piece of writing. The 78 half-tone
+    reproductions are not very <span class="pagenum" id="Page_60">60</span>clear, but they include more than a dozen
+    which are in neither Friedländer nor Bernard.</p>
+
+  <p class="hang"><span class="smcap">Pieter Bruegel.</span> Vierzehn Faksimiledrucke nach Zeichnungen und
+    Aquarellen. Mit einer Einleitung von <span class="smcap">Kurt Pfister</span>. München:
+    R. Piper &amp; Co.: 1922.</p>
+
+  <p>This handsome series of large plates is a publication of the
+    <cite>Marées-Gesellschaft</cite> and for faithfulness in facsimile
+    reproduction is not to be surpassed.</p>
+
+  <p class="hang"><span class="smcap">Pieter Brueghel’s “Fall of Icarus” in the Brussels Museum.</span> By
+    <span class="smcap">Arthur Edwin Bye</span>. In Art Studies: Mediæval Renaissance and
+    Modern: No. 1. Princeton: University Press: 1923.</p>
+
+  <p>A sympathetic though not stylistically distinguished essay in
+    appreciation, written around the <cite>Fall of Icarus</cite> in the Brussels
+    Museum.</p>
+
+  <p class="hang"><span class="smcap">Renaissance Art.</span> By <span class="smcap">Elie Faure</span>. New York: Harper &amp;
+    Brothers: 1923. (Of Bruegel: pp. 276–286).</p>
+
+  <p>This author’s habitual saturation with his subject-matter has enabled
+    him to convey the multitudinous quality to be felt in many of Bruegel’s
+    pictures and also to adumbrate the humanity of soul behind them; but
+    he has almost nothing to say about the more narrowly æsthetic merits
+    which permit of Bruegel being ranked among the great; and even on the
+    score of subject-matter Bruegel’s livingness is almost smothered under
+    a rhetoric made sluggish with anecdotal detail.</p>
+
+  <p class="hang"><span class="smcap">Breughel.</span> By <span class="smcap">Aldous Huxley</span>. In The Calendar of Modern
+    Letters: vol. 1, no. 6: London: August 1925.</p>
+
+  <p>This essay is a little sermon on the virtue of comprehensiveness in the
+    appreciation of art, with Bruegel as an ideal text. It is not itself
+    a comprehensive presentation of the painter or his work and it has
+    very few traces of the verbal brilliancy which has had so much to do
+    with putting this author’s novels in the best-selling class; but it
+    may make the name of Bruegel known to many who are not in a position
+    to penetrate his work on their own account. I note a curious slip
+    in the transposition of titles between the Brussels <a href="#i_32"><cite>Numbering at
+    Bethlehem</cite></a> and the Vienna <a href="#i_33"><cite>Massacre of the Innocents</cite></a>.</p>
+
+  <p class="hang"><span class="smcap">Die Zeichnungen Pieter Bruegels.</span> Von <span class="smcap">Karl Tolnai</span>.
+    München: R. Piper &amp; Co.: 1925.</p>
+
+  <p>This book has immediately taken rank as the standard authority on the
+    drawings; its 104 large half-tone plates reproduce every drawing listed
+    in its catalogue.</p>
+
+  <p class="hang"><span class="smcap">Pieter Bruegel der Aeltere.</span> Siebenunddreissig
+    Farbenlichtdrucke nach seinen Hauptwerken in Wien und eine Einführung
+    in seine Kunst. Von <span class="smcap">Max Dvořák</span>. Wien: Oesterreichischen
+    Staatsdruckerei.</p>
+
+  <p>This wonderful production is just being completed; its magnificent
+    plates embody the utmost resources of modern color-printing. An edition
+    with the text translated into French is announced for the month of
+    July, and another with a translation into English is expected during
+    the year.</p>
+
+  <p class="p2">The foregoing annotations are based upon actual reading and examination
+    of the books and articles mentioned. I think it well to append a few
+    additional items which I have had no opportunity as yet to examine;
+    my study of the volumes already listed, however, leads me to believe
+    that they possess interest and importance. The words in italics at the
+    end of each entry indicate its source among the books in the previous
+    section.</p>
+
+  <p class="hang"><span class="smcap">Pierre Brueghel Le Vieux.</span> Par <span class="smcap">Henri Hymans</span>. (Gazette
+    des Beaux-Arts: Paris: 1890 et 1891.) <cite>Pfister: Bibliography.</cite></p>
+
+  <p class="hang"><span class="smcap">Les Brueghel.</span> Par <span class="smcap">Emile Michel</span>. Paris: 1892. <cite>Van
+    Bastelaer &amp; Hulin, <abbr title="page">p.</abbr> 294.</cite></p>
+
+  <p class="hang"><span class="smcap">Pieter Brueghel der Aeltere und sein Kunstschaffen.</span> Von
+    <span class="smcap">Alex L. Romdahl</span>. (Jahrbuch der Kunsthistorischen Sammlungen
+    des Allerhöchsten Kaiserhauses, Bd. 25: Wien: 1905.) <cite>Tolnai and
+    Pfister: Bibliographies.</cite></p>
+
+  <p class="hang"><span class="smcap">Pieter Bruegel im Kupferstichkabinett zu Berlin.</span> Von
+    <span class="smcap">Ludwig Burchard</span>. (Amtliche Berichte aus der Königliche
+    Kunstsammlung in Berlin, Bd. 34: Berlin: 1912–13.) <cite>Tolnai:
+    Bibliography.</cite></p>
+
+  <p class="hang"><span class="smcap">Die Niederländische Landschaftsmalerei von Patinir bis
+    Bruegel.</span> Von <span class="smcap">Ludwig von Baldass</span>. (Jahrbuch der
+    Kunsthistorischen Sammlungen des Allerhöchsten Kaiserhauses, Bd. 34:
+    Wien: 1918.) <cite>Tolnai: Bibliography.</cite></p>
+
+  <p class="hang"><span class="smcap">Der Bauern-Bruegel und das Deutsche Sprichwort.</span> Von
+    <span class="smcap">Wilhelm Fraenger</span>. (München: 1923.) <cite>Tolnai:
+    Bibliography.</cite></p>
+
+  <hr class="chap x-ebookmaker-drop">
+  <div class="chapter">
+    <span class="pagenum" id="Page_61">61</span>
+    <h2 class="nobreak" id="NOTES">NOTES</h2>
+  </div>
+
+  <p class="drop-cap-s"><span class="smcap1">The</span> illustrations of Bruegel’s paintings accompanying this article are
+    confined to those accepted as authentic by <abbr title="Monsieur">M.</abbr> Hulin in his catalogue
+    (see Bibliography, first item), with certain additional ones discovered
+    since its publication. Seventeen of the paintings are positively dated;
+    the rest must be distributed through the eleven years of painting on
+    other evidence. Wherever a date appears under an illustration, it is
+    the one assigned by the authority just mentioned, with the exceptions
+    noted. The only alteration in the chronological order, so far as that
+    may be determined, has been the grouping of the <a href="#i_48"><cite>Months</cite></a> at the
+    end, to correspond with the text, in which they are treated as the
+    summing-up of Bruegel’s work as a painter. All the drawings reproduced
+    are dated on the authority of Herr Tolnai (see Bibliography, fourteenth
+    item). The following paragraphs give certain supplementary facts:</p>
+
+  <p><a href="#i_10"><cite>Village Marriage</cite></a>: Two copies by Pieter <abbr title="second">II</abbr> are known. A
+    comparison of this picture with them shows that the arm and hand of the
+    man kneeling near the bottom of the stairway have been repainted “for
+    reasons of decency”!</p>
+
+  <p><a href="#i_11"><cite>Dancing Peasant</cite></a>: This is doubtful. Herr Friedländer considers it
+    a copy; <abbr title="Monsieur">M.</abbr> Hulin leaves the matter undetermined, but reproduces it.</p>
+
+  <p><a href="#i_15"><cite>Descent of Christ into Limbo</cite></a> (drawing): Herr Tolnai says that
+    the date and signature are apocryphal, but assigns it to no other year.</p>
+
+  <p><a href="#i_16"><cite>Flemish Proverbs</cite></a>: Not known to <abbr title="Monsieur">M.</abbr> Hulin; date given on the
+    authority of Herr Friedländer.</p>
+
+  <p><a href="#i_19"><cite>Battle Between the Israelites and the Philistines</cite></a>: also called
+    <cite>The Death of Saul at the Battle of Gilboa</cite>. The uncertainty
+    of this date turns upon whether an extra figure can or can not be
+    discerned at the end of the Roman numerals.</p>
+
+  <p><a href="#i_21"><cite>Dulle Griet</cite></a>: The literal subject is the quarrelsome woman,
+    Terrible Margaret, she who frightens the devil himself.</p>
+
+  <p><a href="#i_23"><cite>The Carrying of the Cross</cite></a>: Also called <cite>The Road to
+    Calvary</cite>.</p>
+
+  <p><a href="#i_27"><cite>The Misanthrope</cite></a>: Also called <cite>The Perfidy of the World</cite>.
+    The proverb lettered at the bottom is</p>
+
+  <div class="center-container">
+    <div class="poetry">
+      <div class="stanza" lang="nl">
+        <div class="i0">Om dat de vverelt is soe ongetru</div>
+        <div class="i0">Daer on gha ic in den ru.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="noindent">The translation is: Since the world is so untrustworthy, I
+    go in mourning.</p>
+
+  <p><a href="#i_28"><cite>The Proverb of the Bird-Nester</cite></a>: The proverb is</p>
+
+  <div class="center-container">
+    <div class="poetry">
+      <div class="stanza" lang="nl">
+        <div class="i0">Dije den nest vveet dije vveeten:</div>
+        <div class="i0">Dije rooft, dije heeten.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="noindent">It may be translated: Who knows where the nest is has his
+    knowledge; who rifles it has possession.</p>
+
+  <p><a href="#i_32"><cite>The Numbering at Bethlehem</cite></a>: Also called <cite>The Payment of
+    Tithes</cite>.</p>
+
+  <p><a href="#i_36"><cite>The Fall of Icarus</cite></a>: Not catalogued by <abbr title="Monsieur">M.</abbr> Hulin. Here put next
+    to the <cite>Paul</cite> in order to follow the text, in which these two are
+    joined with the <a href="#i_48"><cite>Months</cite></a> as representing the height of Bruegel’s
+    achievement.</p>
+
+  <p><a href="#i_38"><cite>The Wine of Saint Martin</cite></a>: Admitted by <abbr title="Monsieur">M.</abbr> Hulin, but with strong
+    doubts; regarded as the fragment of a larger work; done originally in
+    tempera and repainted in oil, perhaps in the seventeenth century.</p>
+
+  <p><a href="#i_41"><cite>The Magpie on the Gallows</cite></a>: This picture was bequeathed by
+    Bruegel to his wife.</p>
+
+  <p><a href="#i_46"><cite>Marine</cite></a>: Not dated by <abbr title="Monsieur">M.</abbr> Hulin. Placed here because it appears to
+    be unfinished, and so possibly very late.</p>
+
+  <p><a href="#i_48"><cite>The Months</cite></a>: The months suggested in the titles given under the
+    illustrations follow <abbr title="Monsieur">M.</abbr> Hulin’s catalogue. Herr Friedländer assigns
+    that given as January to March, the February to December, the August
+    (New York) to July, leaving the other two as given.</p>
+
+  <p><abbr title="Monsieur">M.</abbr> Hulin dates the whole set about 1567. The only trace among them of a
+    date is on the picture in the Metropolitan Museum; on the strength of
+    this Herr Friedländer assigns it positively to 1565, but Mr. Burroughs
+    is inclined to agree with <abbr title="Monsieur">M.</abbr> Hulin. In any case the violation of time
+    order in placing this set last is not very great and the gain is
+    considerable in giving a culminating impression of Bruegel’s art.</p>
+
+  <h3>2.</h3>
+
+  <p>No paintings in Bruegel’s manner are reproduced which are definitely or
+    even probably by the sons. They are a multitude in themselves, and are
+    mostly attributed to the father. They are to be met with everywhere,
+    from London to Palermo, from Madrid to Petrograd. Herr Friedländer
+    authenticates (without reproducing) one in Budapest and another in
+    Csàkány. In Hampton Court Palace there is an extremely interesting
+    smaller version of the Vienna <a href="#i_33"><cite>Massacre of the Innocents</cite></a> in which
+    eatables are substituted for most of the children, and a companion
+    piece of coarser workmanship giving an entirely different picture of a
+    massacre. In Vienna there are a dozen or more by the sons which throw
+    <span class="pagenum" id="Page_62">62</span>much light on the entire question of Bruegel’s own pictures; the most
+    interesting of these is in the Lichtenstein Collection and is in the
+    manner of the <cite>Fleeing Shepherd</cite> in Philadelphia. The problems
+    raised by all these pictures are many and complex, but the scope and
+    intention of this essay did not permit of its touching upon such
+    matters. However, there are all sorts of ways to spend life, and not
+    the least interesting way would be to go a-Bruegeling through Europe.</p>
+
+  <p class="p2"><span class="smcap">Erratum</span>: On <a href="#Page_33">page 33</a> the date of the <a href="#i_33"><cite>Massacre of the
+    Innocents</cite></a> should read 1566(?) instead of 1556(?).</p>
+
+  <p class="mb10"><a href="#i_39b"><cite>The Land of Cockaigne</cite></a>, reproduced on <a href="#Page_39">page 39</a>, is now in the Alte
+    Pinakothek in Munich.</p>
+
+  <figure class="figcenter illowp90" id="i_62">
+    <img src="images/i_62.jpg" alt="">
+    <figcaption>THE FALL OF ICARUS (DETAIL)</figcaption>
+  </figure>
+
+  <p><span class="pagenum" id="Page_63">63</span></p>
+
+  <figure class="figcenter illowp75" id="i_63">
+    <img src="images/i_63.jpg" alt="">
+      <figcaption>MASTER AND PUPIL (DRAWING). &nbsp; &nbsp;ABOUT 1560–61. &nbsp; &nbsp;VIENNA, ALBERTINA</figcaption>
+  </figure>
+
+  <div class="bbox">
+    <span class="pagenum" id="Page_64">64</span>
+    <div class="center mt2 mb2">
+      <span class="xxlarge"><b>THE ARTS</b></span><br>
+      <span class="xlarge">A MONTHLY MAGAZINE OF ART</span>
+    </div>
+
+    <div style="margin-left: 5%; margin-right: 5%;">
+      <span class="smcap">Forbes Watson</span>, <i>Editor</i>
+      <span class="fright"><span class="smcap">William Robb</span>, <i>Manager</i></span><br>
+      <span class="smcap">Lloyd Goodrich</span>, <i>Associate Editor</i>
+      <span class="fright"><span class="smcap">Virgil Barker</span>, <i>European Editor</i></span>
+    </div>
+
+    <p class="drop-cap"><span class="smcap1">THE</span> ARTS is not exclusively a magazine of modern art or
+      exclusively a magazine of the art of the past. It is solely a magazine
+      of art, whenever or wherever produced.</p>
+
+    <p>Its text is intelligent, stimulating and readable, and the essays which
+      appear in its pages are permanent contributions to the literature of
+      art. In selecting its writers <cite class="smcap">The Arts</cite> endeavors to secure
+      those who are authorities on their particular subjects but are also
+      capable of writing freshly and directly about them—who are not so
+      engrossed by the historical and archæological side of art as to forget
+      its supreme æsthetic importance.</p>
+
+    <p>In its essays on the art of the past <cite class="smcap">The Arts</cite> does not confine
+      itself within the conventional limits of the European tradition, but
+      recognizes in the art of the Orient, of Africa, or of aboriginal
+      America the same qualities which exist in the art of the West.</p>
+
+    <p>In its treatment of contemporary art, <cite class="smcap">The Arts</cite> attempts
+      to present the work of the most vital artists of the present day,
+      whether radical or conservative, the emphasis being placed not on the
+      particular group or faction to which the artist may belong, but upon
+      the work itself.</p>
+
+    <p>Realizing that one of the most important functions of a magazine is the
+      discovery of new talent, <cite class="smcap">The Arts</cite> has always opened its pages
+      to the work of the most promising of the younger artists. Its policy is
+      not to wait until an artist has achieved success, but to be ahead of
+      the crowd in affording recognition to the talented men of the future.</p>
+
+    <p>Its regular departments, such as reviews of current exhibitions
+      and new art books, keep its readers informed of the significant
+      developments in the world of art. Although the bulk of its articles are
+      devoted to painting, sculpture, architecture and the decorative arts,
+      <cite class="smcap">The Arts</cite> from time to time publishes essays in the fields of
+      music, drama or literature which it knows will be of interest to its
+      readers—particularly on the subjects of stage design and the art of the
+      films.</p>
+
+    <p>The written word, however, cannot convey all of the significance of a
+      work of art. For that reason it has been the policy of the magazine
+      to make of each issue a series of illustrations which no artist or
+      art lover can afford to be without. Every number of <cite class="smcap">The Arts</cite>
+      contains fifty to sixty excellently printed reproductions of important
+      works of art of the past or the present.</p>
+
+    <div class="center"><i>Fifty cents a copy; five dollars a year.</i></div>
+
+    <div class="center xlarge">THE ARTS PUBLISHING CORPORATION</div>
+    <div>19 East 59th Street<span class="fright">New York, N. Y.</span></div>
+  </div>
+
+  <div class="transnote">
+    <div class="large center"><b>Transcriber’s Notes:</b></div>
+    <ul class="spaced">
+      <li>Obvious typographical errors have been silently corrected.</li>
+      <li>Errata have been applied.</li>
+      <li>The name Michel Angelo has been corrected to Michelangelo</li>
+      <li>The painting <cite>A Village Wedding</cite> is referred to as <cite>Village Marriage</cite> in the NOTES.</li>
+    </ul>
+  </div>
+
+<div style='text-align:center'>*** END OF THE PROJECT GUTENBERG EBOOK 75540 ***</div>
+</body>
+</html>
+
