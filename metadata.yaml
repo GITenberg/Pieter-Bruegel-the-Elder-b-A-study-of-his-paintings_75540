@@ -11,6 +11,9 @@ contributor:
     gutenberg_agent_id: '58044'
     url: http://www.gutenberg.org/2009/agents/58044
     wikipedia: https://en.wikipedia.org/wiki/Pieter_Bruegel_the_Elder
+covers:
+- cover_type: archival
+  image_path: 75540-h/images/cover.jpg
 creator:
   author:
     agent_name: Barker, Virgil
@@ -19,6 +22,8 @@ creator:
     gutenberg_agent_id: '58039'
     url: http://www.gutenberg.org/2009/agents/58039
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/75540#Pieter-Bruegel-the-Elder-b-A-study-of-his-paintings
 gutenberg_issued: '2025-03-06'
 gutenberg_type: Text
 identifiers:
